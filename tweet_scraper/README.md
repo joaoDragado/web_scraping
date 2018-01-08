@@ -35,7 +35,6 @@
 3. Loop 450 times 
 
 ```python
-
 counter = 450
 
 while counter:
@@ -64,7 +63,6 @@ test queries :
 ### optional - use bash to automate the script 
 
 ```bash
-
 # to issue a single request for 100 tweets (max allowed by twitter) and save it as json
 python -m tweetget.single
 
