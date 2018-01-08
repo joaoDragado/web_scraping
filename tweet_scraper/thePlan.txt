@@ -1,0 +1,38 @@
+# capture tweets about a query / group of related queries
+
+- make a call to the twitter api for a get_tweet , max num of tweets is 100/150?
+
+- fetch the id of the first(most recent) tweet {since_id} & the id of the last (oldest) tweet {max_id}, and save it in :
+    - a textfile, if the script will run/stop via cron.
+    - in a defaultdict, if the scirpt will run continously e.g.
+    {'query':('since_id','max_id')}
+
+# max_id is inclusive, so should be decreased by 1 , either on store or when specifed as a functiong argument
+
+- repeat the call to get_tweet, every time setting the last_id as a boundary
+
+# test queries :
+
+ομπαμα%2BOR%2BΟμπαμα%2BOR%2Bομπάμα%2BOR%2BΟμπάμα
+#ομπαμα%2BOR%2B#Ομπαμα%2BOR%2B#ομπάμα%2BOR%2B#Ομπάμα
+
+# Algorithm
+
+*  Rate Limit for oath2.0 : 450 requests per 15 min = 900 sec aka 1 request every 2 secs
+
+In each call store the tweets in a json file 
+
+# set counter to requests limit
+counter = 450
+# Loop 450 times 
+while counter:
+    call get tweet
+    save tweet
+    sleep 2s
+    if counter == 1 :
+        wait = int(twitter.get_lastfunction_header('x-rate-limit-reset') - time.time())
+        time.sleep(wait)
+        counter = 450
+    else :
+        counter -= 1
+        time.sleep(2)
