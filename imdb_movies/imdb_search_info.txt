@@ -1,0 +1,22 @@
+all searches return 50 items per page
+
+simple search 
+
+# explicit url
+# 1. by votes desc
+url = 'http://www.imdb.com/search/title?sort=num_votes,desc&start=1&title_type=feature&year=1950,2012'
+# 2. by rating
+http://www.imdb.com/search/title?start=1&title_type=feature&year=1950,2012&sort=user_rating,desc
+http://www.imdb.com/search/title?start=1&title_type=feature&year=1950,2012&sort=user_rating,desc
+# 3. by US gross box office
+http://www.imdb.com/search/title?start=1&title_type=feature&year=1950,2012&sort=boxoffice_gross_us,desc
+
+advanced search
+# Most Voted Feature Films Released 1967-01-01 to 2017-12-31 With At Least 100 Votes, User Rating Between 6.0 and 10.0
+http://www.imdb.com/search/title?num_votes=100,&production_status=released&release_date=1967,2017&sort=year,desc&title_type=feature&user_rating=6.0,10
+
+# Latest TV Series Released 1997-01-01 to 2017-12-31 With At Least 100 Votes, User Rating Between 6.0 and 10.0
+http://www.imdb.com/search/title?num_votes=100,&production_status=released&release_date=1997,2017&sort=year,desc&title_type=tv_series&user_rating=6.0,10
+
+# Latest Oscar-Winning, Oscar-Nominated Feature Films Released 1967-01-01 to 2017-12-31 (total: 487)
+http://www.imdb.com/search/title?groups=oscar_winners,oscar_nominees&production_status=released&release_date=1967,2017&sort=year,desc&title_type=feature
