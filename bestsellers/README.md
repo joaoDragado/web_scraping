@@ -15,4 +15,4 @@ Initial pages are :
  - [Lists of The New York Times Fiction Best Sellers](https://en.wikipedia.org/wiki/Lists_of_The_New_York_Times_Fiction_Best_Sellers) 
  - [Lists of The New York Times Non-Fiction Best Sellers](https://en.wikipedia.org/wiki/Lists_of_The_New_York_Times_Non-Fiction_Best_Sellers)
 
-Save the data in ```NYT_fiction.csv``` , ```NYT_nonfiction.csv```
+Save the data in ```wiki_NYT.csv``` , ```wiki_NYT_nonfiction.csv```
