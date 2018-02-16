@@ -37,7 +37,7 @@ for i in range(1993,2018):
             tops.append(entry)
 
 # write the full list into a csv file 
-with open('wiki_NYT.csv', mode='at', encoding='utf-8') as f:
+with open('NYT_fiction.csv', mode='at', encoding='utf-8') as f:
     #f.write('\n'.join(tops))
     #json.dump(tops, f)   
     writer = csv.writer(f)
