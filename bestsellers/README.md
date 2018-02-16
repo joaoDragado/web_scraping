@@ -1,7 +1,9 @@
 # Obtaining NYT bestsellers dataset
 ---
-Register with Goodreads and the New York Times Books APIs and obtain your keys ,a dn store them in a ```keys.json`` file. 
-Extra :Update ```keys.local`` with those keys
+### Preliminaries :
+
+- Register with Goodreads and the New York Times Books APIs and obtain your keys ,and store them in a ```keys.json`` file. 
+> Extra :Update ```keys.local`` with those keys.
 
 ```bash
 cp keys.local keys.json
@@ -25,3 +27,22 @@ Save the data in ```wiki_NYT.csv``` , ```wiki_NYT_nonfiction.csv```
 Run ```get-goodreads-ids.py```. The output will be saved in ```fiction_goodreads-ids.csv```
 
 Set start and end year in intervals, so as to identify missing IDs, which will need to be entered manually at the end of the script's  run.
+
+
+---
+## Repository Contents
+
+```bash
+.
+├── apis
+│   ├── goodreads_api.pdf
+│   └── nyt_API.pdf
+├── get-goodreads-ids.py
+├── README.md
+├── wiki_NYT_fiction.py
+└── wiki_NYT_nonfiction.py
+
+1 directory, 6 files
+
+```
+---
