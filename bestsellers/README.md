@@ -7,13 +7,13 @@
 ├── apis
 │   ├── goodreads_api.pdf
 │   └── nyt_API.pdf
+├── get-book-info.py
 ├── get-goodreads-ids.py
 ├── README.md
 ├── wiki_NYT_fiction.py
 └── wiki_NYT_nonfiction.py
 
-1 directory, 6 files
-
+1 directory, 7 files
 ```
 ---
 
