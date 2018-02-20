@@ -48,3 +48,19 @@ Run ```get-goodreads-ids.py```. The output will be saved in ```fiction_goodreads
 Set start and end year in intervals, so as to identify missing IDs, which will need to be entered manually at the end of the script's  run.
 
 ---
+
+Using ```book_id``` from the previous step, run ```get-book-info.py```. This generates ```book-info.csv```. 
+
+> Fields extracted :
+**'title', 'image_url', 'publisher', 'num_pages', 'link', 'isbn', 'isbn13', 'publication_year', 'genres' .**
+
+The **genres** field is populated by the top 5 genres associated with each book ; the full list of genres was obtained from the goodreads site. 
+ 
+Set start and end year as in Step 2.
+
+- Missing values (especially numOfPages) need to be entered manually.
+
+> Careful examination of results is needed (via ISBNs), with respect to correct edition ; this will determine the year of 1st publication. When uncertain, we choose the 1st hardback edition.
+---
+
+  
