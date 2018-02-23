@@ -13,3 +13,24 @@ find . -type f -regex '.*\.\(html\|dat\|txt\|xml\|svg\|eot\|ttf\|woff\|css\|ico\
 find . -not -name "*1000.jpg" -not -name "*1000.gif -not -type d" -delete
 ```
 ---
+
+### Make a list of all image files in the folder and copy it in a text file.
+
+```bash
+ls | grep ".[gif|png|jpg]"$ > images.txt
+```
+---
+
+### Filter out duplicates and create new file with only the unique items.
+
+```bash
+sort file.txt | uniq > file_sorted.txt
+```
+---
+
+
+
+
+
+
+
