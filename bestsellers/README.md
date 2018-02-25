@@ -48,6 +48,8 @@ Run ```get-goodreads-ids.py```. The output will be saved in ```fiction_goodreads
 Set start and end year in intervals, so as to identify missing IDs, which will need to be entered manually at the end of the script's  run.
 
 ---
+## Step 3. Get book info from Goodreads
+
 
 Using ```book_id``` from the previous step, run ```get-book-info.py```. This generates ```book-info.csv```. 
 
