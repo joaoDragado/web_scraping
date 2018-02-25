@@ -28,6 +28,14 @@ sort file.txt | uniq > file_sorted.txt
 ```
 ---
 
+### Given a file with urls (each row a url), iterate through all the liknks and download them in the present folder.
+
+```bash
+while read URL; do wget $URL; done < file.txt
+```
+
+---
+
 
 
 
