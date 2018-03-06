@@ -15,7 +15,7 @@ bs_object = bs4.BeautifulSoup(r.text)
 '''
 
 example_file = open('example.html')
-example_bSoup = bs4.BeautifulSoup(example_file)
+example_Soup = bs4.BeautifulSoup(example_file)
 
 '''Retrieve a web page element from a BeautifulSoup object by calling the select() method and passing a string of a CSS selector for the element. Selectors are like regular expressions.
 
