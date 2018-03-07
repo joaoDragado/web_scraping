@@ -65,4 +65,12 @@ Set start and end year as in Step 2.
 > Careful examination of results is needed (via ISBNs), with respect to correct edition ; this will determine the year of 1st publication. When uncertain, we choose the 1st hardback edition.
 ---
 
-  
+## Step 4. Get author info from Goodreads
+
+Using ```author_id``` from Step 2, run ```get-author-info.py```
+
+Missing info such as gender, birth and death dates should be entered manually. 
+
+First, this generates ```author-manual-info.csv```. Then run the script again, by changing a variable ```has_manual_info```. Second run generates ```author-info.csv```.
+
+
