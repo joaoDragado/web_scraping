@@ -1,19 +1,23 @@
 # Obtaining NYT bestsellers dataset
+
+> An augmented fork of the work done by **Tanyoung Kim**.
 ---
 ## Repository Contents
 
 ```bash
 .
-├── apis
-│   ├── goodreads_api.pdf
-│   └── nyt_API.pdf
-├── get-book-info.py
-├── get-goodreads-ids.py
-├── README.md
-├── wiki_NYT_fiction.py
-└── wiki_NYT_nonfiction.py
+├── bestsellers
+│   ├── apis
+│   │   ├── goodreads_api.pdf
+│   │   └── nyt_API.pdf
+│   ├── get-author-info.py
+│   ├── get-book-info.py
+│   ├── get-goodreads-ids.py
+│   ├── goodreads.py
+│   ├── README.md
+│   ├── wiki_NYT_fiction.py
+│   └── wiki_NYT_nonfiction.py
 
-1 directory, 7 files
 ```
 ---
 
